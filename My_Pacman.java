@@ -1,7 +1,5 @@
 package GUI;
 
-import java.util.ArrayList;
-
 public class My_Pacman{
 /**
  * A class that represents a "robot" with a location, orientation and ability to move (at defined speed)
@@ -89,13 +87,5 @@ public class My_Pacman{
 	public void setAngle(double angle) {
 		this.angle = angle;
 	}
-
-	public Object getpath() {
-		My_Pacman pac= new My_Pacman();
-		ArrayList<My_Pacman> path_of_pac=new ArrayList<My_Pacman>();
-		
-		return path_of_pac.add(pac);
-	}
-
 
 }
