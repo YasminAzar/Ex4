@@ -16,11 +16,11 @@ import Threads.ThreadPacman;
 import Threads.ThreadPlayer;
 
 /**
- * This class receives GAME (a collection of fruit and pecmans) and calculates the optimal route,
- *  so that all fruits will eat as quickly as possible.
- *  The goal of the algorithm is to minimize the amount of time it takes for all the pecmans 
- *  to eat the fruits.
- * The matod:
+ *This class receives GAME (a collection of fruit and pecmans) and calculates the optimal route,
+ *so that all fruits will eat as quickly as possible.
+ *The goal of the algorithm is to minimize the amount of time it takes for all the pecmans 
+ *to eat the fruits.
+ *The matod:
  *Eat the fruits in the shortest time.
  *Do not touch the black boxes. The method we do this is:
  *We will consider the shortest time from our player for any fruit and send our player to this fruit.
@@ -29,13 +29,13 @@ import Threads.ThreadPlayer;
  *If the boxes disturb the top, then move to the right and then to the left, if it interferes from below,
  *we will move to the right and again to the right, if the box interferes with the left we will go up
  *and to the left and if the box interferes on the right, We will go up and to the right.
+ *@author Yasmin and Dan
  */
 
 public class ShortAlgoEx4 {
 
-	/**
-	 * 
-	 *  Every pacman finds the fruit closest to it and goes to eat it like this until all the fruits are eaten
+	/** 
+	 * Every pacman finds the fruit closest to it and goes to eat it like this until all the fruits are eaten
 	 * @param game
 	 */
 	Game game = new Game() ;
@@ -95,16 +95,12 @@ public class ShortAlgoEx4 {
 			pacman.getP_Path().getFruitsPath().add(chosenFruit) ;
 			chosenFruit.setChosedToPath();
 		}
-
-
-
 		}
-	
+
 	
 				public void start(MyGUI mygui)
 				{
 					
-
 					Thread th = new Thread();
 
 
